@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ayesha </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: "Lato", sans-serif;
+      background-color: powderblue;}
+ul   {font-family : sans-serif;
+      color: blue;}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;}
+
+.sidenav a:hover {
+  color: #f1f1f1;}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;} }
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;}
+
+div.desc {
+  padding: 15px;
+  text-align: center;}
+
+div.gallery:hover {
+  border: 1px solid #777;}
+
+div.gallery img {
+  width: 100%;
+  height: auto;}
+</style>
+</head>
+
+<body>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="https://www.amazon.com/">Amazon</a>
+  <a href="https://www.netflix.com/">Netflix</a>
+  <a href="https://www.youtube.com/">Youtube</a>
+  <a href="https://www.spotify.com/">Spotify</a>
+</div>
+
+<h2 style="color:Tomato;">Hello, My name is Ayesha Khan</h2>
+<h3> These are some facts about myself </h3>
+<ul>
+  <li>My favorite websites to watch movies and videos are Netflix and Youtube</li>
+  <li> I love listening to music on Spotify </li>
+  <li> My favorite dessert is ice cream <p><img src ="i.jpg" width="320" height="320"> </p></li>
+  <li> I enjoy going on rides <p><img src ="rides.jpg" width="320" height="320"> </p> </li>
+</ul>
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open here for my favorite websites </span>
+
+<ul>
+  <li> Some places I want to visit are </li>
+    <ul><li> Click on picture to see the full image</li></ul>
+</ul>
+
+<div class="gallery">
+  <a target="_blank" href="turkey.jpg">
+    <img src="turkey.jpg" alt="Turkey" width="800" height="600">
+  </a>
+  <div class="desc">I want to visit Turkey</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="spain.jpg">
+    <img src="spain.jpg" alt="Spain" width="800" height="600">
+  </a>
+  <div class="desc">I want to visit Spain</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="japan.jpg">
+    <img src="japan.jpg" alt="Japan" width="800" height="600">
+  </a>
+  <div class="desc">I want to visit Japan</div>
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0"; }
+</script>
+
+</body>
+</html>
